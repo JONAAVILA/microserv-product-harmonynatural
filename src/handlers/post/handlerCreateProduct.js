@@ -3,9 +3,9 @@ import { schema } from '../../utils/schema.js'
 
 const { Product } = models
 
-const handlerCreateProduct = async (name,description,image,price,category,stock)=>{
+const handlerCreateProduct = async (tittle,description,image,price,category,stock)=>{
     const { error } = schema.validate({
-        name:name,
+        tittle:tittle,
         description:description,
         image:image,
         price:price,
@@ -15,7 +15,7 @@ const handlerCreateProduct = async (name,description,image,price,category,stock)
     if(error) throw new Error("Valores inválidos");
 
     const product = await Product.create({
-        name:name,
+        tittle:tittle,
         description:description,
         image:image,
         price:price,

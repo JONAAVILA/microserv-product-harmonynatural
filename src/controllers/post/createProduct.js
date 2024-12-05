@@ -3,7 +3,7 @@ import handlerCreateProduct from "../../handlers/post/handlerCreateProduct.js";
 const createProduct = async (req,res)=>{
     try {
         const {
-            name,
+            tittle,
             description,
             image,
             price,
@@ -12,7 +12,7 @@ const createProduct = async (req,res)=>{
         } = req.body
 
         const product = await handlerCreateProduct(
-            name,
+            tittle,
             description,
             image,
             price,

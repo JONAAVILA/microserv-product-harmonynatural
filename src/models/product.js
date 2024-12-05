@@ -6,7 +6,7 @@ export default (sequelize)=>{
             type:DataTypes.STRING,
             primaryKey:true
         },
-        name:{
+        tittle:{
             type:DataTypes.STRING,
             allowNull:false
         },
