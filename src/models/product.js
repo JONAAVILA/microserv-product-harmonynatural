@@ -3,8 +3,12 @@ import { DataTypes } from 'sequelize';
 export default (sequelize)=>{
     const Product = sequelize.define('Product',{
         id:{
-            type:DataTypes.STRING,
+            type:DataTypes.UUID,
             primaryKey:true
+        },
+        idAdmin:{
+            type:DataTypes.STRING,
+            allowNull:false
         },
         tittle:{
             type:DataTypes.STRING,
@@ -29,6 +33,10 @@ export default (sequelize)=>{
         stock:{
             type:DataTypes.STRING,
             allowNull:false
+        },
+        active:{
+            tyep:DataTypes.BOOLEAN,
+            defaultValue:true
         }
     })
     return Product
