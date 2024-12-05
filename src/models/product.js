@@ -27,7 +27,7 @@ export default (sequelize)=>{
             allowNull:false
         },
         stock:{
-            type:DataTypes.NUMBER,
+            type:DataTypes.STRING,
             allowNull:false
         }
     })
