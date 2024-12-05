@@ -1,4 +1,4 @@
-import handlerPayProducts from "../../handlers/post/handlerPayProducts"
+import handlerPayProducts from "../../handlers/post/handlerPayProducts.js"
 
 const payProducts = async (req,res)=>{
     try {

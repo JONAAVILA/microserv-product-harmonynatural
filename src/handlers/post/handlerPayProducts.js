@@ -1,4 +1,4 @@
-import Order from "../../payments/mercadoPago/createOrder"
+import Order from "../../payments/mercadoPago/createOrder.js"
 
 const handlerPayProducts = async (items)=>{
     const point = await Order(items)
