@@ -1,5 +1,5 @@
 import { Preference } from "mercadopago";
-import client from "./createPreferenc.js";
+import client from "./createPreference.js";
 
 const Order = (items)=>{
     try {
