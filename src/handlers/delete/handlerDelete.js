@@ -8,7 +8,7 @@ const handlerDelete = async (id)=>{
             active:false
         },
         {
-            where:{id}
+            where:id
         }
     )
     if(!product) throw new Error('No se encontro el producto')
