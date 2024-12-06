@@ -7,7 +7,7 @@ const handlerDelete = async (id)=>{
     if(!product) throw new Error('No se encontro el producto');
 
     product.active = false
-    await Product.save()
+    await product.save()
 
     return 'Producto eliminado'
 }
