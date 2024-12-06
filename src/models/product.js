@@ -26,6 +26,10 @@ export default (sequelize)=>{
             type:DataTypes.STRING,
             allowNull:false
         },
+        downloadable:{
+            type:DataTypes.BOOLEAN,
+            defaultValue:true
+        },
         category:{
             type:DataTypes.STRING,
             allowNull:false
