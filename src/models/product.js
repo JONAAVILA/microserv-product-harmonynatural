@@ -39,7 +39,7 @@ export default (sequelize)=>{
             allowNull:false
         },
         active:{
-            tyep:DataTypes.BOOLEAN,
+            type:DataTypes.BOOLEAN,
             defaultValue:true
         }
     })
